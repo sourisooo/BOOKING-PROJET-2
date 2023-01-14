@@ -1,0 +1,6 @@
+{
+  "port": 8080,
+  "MONGO_URI": "mongodb+srv://netninja:test1234@cluster0.dr9enon.mongodb.net/?retryWrites=true&w=majority",
+  "ACCESS_SECRET": "super secret from backend",
+  "REFRESH_SECRET": "super refresh key"
+}
