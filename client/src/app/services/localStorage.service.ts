@@ -69,3 +69,16 @@ const localStorageService = {
 };
 
 export default localStorageService;
+
+
+//Commentaire
+//Les fonctions permettent de sauvegarder ou charger en local diverses données.
+//"Many browser extensions store their data in the browser's so-called Local Storage, which 
+//is nothing else than a storage location managed by the web browser. And as the same suggests, all is saved
+// locally on the machine where the browser is installed. Local storage is not in the cloud."
+//Toutes ses données sont ensuite concatenés dans la constante localStorageService pour pouvoir
+//etre utiliser dans les autres feuilles de code.
+//Concernant la fonction toggleFavoriteRoom, elle prend pour entrée un string (roomId), prend la liste
+// ou array des favoris avec la fonction getFavoritesRoom, compare si le string roomId est présent dans
+//l'array sinon l'ajoute dans l'array. L'objet ajouté est ensuite sauvegardé sur le localstorage:
+//l'ancienne valeur FAVORITES_ROOM_KEY est remplacée par la nouvelle valeur favoritesRoomList.

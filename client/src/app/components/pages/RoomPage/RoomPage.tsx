@@ -79,3 +79,20 @@ const RoomPage: React.FC<RoomPageProps> = ({ roomId }) => {
 };
 
 export default RoomPage;
+
+
+//Commentaires
+// La fonction RoomPage est précisé par le script "React.FC<RoomPageProps>" qui permet de définir le type de Roompage
+//qui est une fonction et le type d'argument qu'il peut recevoir, ici RoomPageProps, qui représente un type string.
+// La fonction prend un string "roomId" en entrée et retourne "Loader". 
+//La fonction récupère l'objet room à travers l'appel de la fonction getRoomById(roomId) puis récupère l'état de 
+//l'objet à travers la fonction implémentée React useSelector puis incorpore cette objet dans la variable "room".
+// Une variable useState Statut est implémentée avec React, elle prend pour valeur initiale "isFavorite" qui représente
+// la valeur contenue dans localstorage à travers l'appel de fonction localStorage.service.
+//La fonction handleToggleFavorite est une fonction qui prend un string (roomId) en entrée, appel la fonction 
+//toggleFavoriteRoom sur localstorage en prenant pour argument le string (roomId) et change la variable Statut à
+//l'état précédent (2 états sont possibles: isFavorite ou false).
+//L'objet room est destructuré pour pouvoir utilisé ses paramètres. Le type room est défni dans la feuille de code
+// "type". La fonction RoomPage génère un template HTML à partir des données issus de la destructurations et des fonctions
+// et variables précédemment définis. A l'intérieure de ce template HTML sont appelé des fonctions BookingForm(génère
+// un complément de Template HTML) et Paper (Mise en forme background).

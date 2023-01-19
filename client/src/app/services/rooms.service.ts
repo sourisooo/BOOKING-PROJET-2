@@ -31,3 +31,8 @@ const roomsService = {
 };
 
 export default roomsService;
+
+//Commentaires
+//La feuille de code paramètre toutes les requetes associés à la page HTML rooms/, requetes
+//réalisées auprès du serveur. Les payloads BookingType et RoomType sont types d'objets que le
+//payload doit respecter en matière de forme.
