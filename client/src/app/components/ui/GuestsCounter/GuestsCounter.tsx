@@ -36,3 +36,12 @@ const GuestsCounter: React.FC<GuestsCounterProps> = ({ data, onChange }) => {
 };
 
 export default React.memo(GuestsCounter);
+
+
+//Commentaires
+//La fonction reduce La méthode reduce() applique une fonction qui est un « accumulateur » et qui traite chaque valeur
+// d'une liste (de la gauche vers la droite) afin de la réduire à une seule valeur: ici il réalise l'addition de toutes 
+// les valeurs présentes dans l'array et retourne le résultat.
+//La fonction GuestsCounter est une fonction qui prend en entrée l'objet data et la méthode onChange et retourne un template
+//HTML utilisant les différentes méthodes, variables et objets précités. La variable data est destructuré afin de pouvoir
+//avoir accès aux paramètres adults, children, babies.

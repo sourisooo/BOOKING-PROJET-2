@@ -112,3 +112,18 @@ const BookingForm = () => {
 };
 
 export default BookingForm;
+
+
+//Commentaires
+//La fonction BookingForm returne un template HTML. Ce template HTML est alimenté par 
+// sessionStorage.service (stockage de donnée spécifique sur le disque locale), des fonctions
+//issues de users et bookings (essentiellement les gets), la fonction useForm qui est invoquer puis destructurée
+//afin de pouvoir utiliser ses paramètres. Useeffect est paramétrer de manière à gérer les erreurs 
+//lorssque currentUserId ou bookingError sont modifiés. La fonction handleSubmit  prend pur entrée
+//une élément HTML form élément:button et récupére la data (valeur actuelle dans  UseForm) pour constituer
+//le payload en associant à data, la variable totalPrice usant la fonctionnalité useState.
+// Ensuite, le reducer booking est appelé pour utiliser les scénaris createBooking (avec le paramètre de méthode payload) et 
+//addBookingRoom ( avec pour paramètre le resultat de la fonction précédente) pour utliser les reducers respectifs booking et room.
+//qui eux meme vont appelé les fonctions roomsservice et bookingservice qui vont gérer les requetes HTML auprès du serveur 
+//notemment les requetes (POST). Le contenu du template HTML retournée par la fonction BookingForm utilise toutes
+//les données principalement citées.

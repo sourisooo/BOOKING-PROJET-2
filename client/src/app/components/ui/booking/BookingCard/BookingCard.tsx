@@ -91,3 +91,12 @@ const BookingCard: React.FC<BookingType> = ({
 };
 
 export default BookingCard;
+
+//Commentaires
+//La fonction BookingCard prend pour entrée un objet de type bookingtype, l'appel à la fonction
+//getRoomById issue des scénaris du reducer room est réalisé pour récupérer le id de room.
+//La fonction handleRemoveBooking  fait appel aux scénaris issus des reducers room et booking.
+//La fonction BookingCard retourne un template HTML reprenant l'ensemble des fonctions et variables
+//ou objets définis précédemment ainsi que les datas issus de la feuille code roomcard ainsi que
+//la fonction getGuestsLabel qui permet de retourner un template HTML spécifque au nombre et type
+//de guest (prise en charge par la feuille de code GuestCounter).

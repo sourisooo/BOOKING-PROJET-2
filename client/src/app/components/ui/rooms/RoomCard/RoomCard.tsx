@@ -69,3 +69,9 @@ const RoomCard: React.FC<RoomType> = ({ _id, roomNumber, price, type, images, co
 };
 
 export default RoomCard;
+
+//Commentaires
+//La fonction RoomCard prend pour entrée un RoomType utilise la méthode GET issu du reducer review en prenant pour
+//paramètre de méthode un string id. Toutes les informations qui vont générés et rendu par le template HTML vont
+//utiliser les variables, objets et fonctions cités précédemment.
+//

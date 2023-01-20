@@ -33,3 +33,10 @@ const authService = {
 };
 
 export default authService;
+
+//Commentaires
+//La constante httpAuth est crée pour spécifée un paramétrage HTTP client: port 8080 et /api.
+//La fonction authService gère plusieurs demandes de requete auprès du serveur, exclusivement
+//POST concernant les objets signUp, signInWithPassword, token, ces derniers étant spécifiés
+//directement dans le code actuel. Les demandes POST sont réalisés sur la constante httpAuth,
+//cad le port 8080 et /api.

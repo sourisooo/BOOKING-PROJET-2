@@ -41,3 +41,10 @@ const bookingService = {
 };
 
 export default bookingService;
+
+
+//Commentaires
+//Cettes page de code gère les requetes auprès du serveur concernant les requetes HTML "booking/";
+//La fonction bookingService est constituée de plusieurs fonctions qui vont en charge les différentes
+//requetes (GET, POST, DELETE). Toutes les spécificités sont pris en charges en argument de la méthode
+//GET dans l'objet params.

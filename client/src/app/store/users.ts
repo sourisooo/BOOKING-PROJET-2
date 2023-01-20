@@ -179,3 +179,18 @@ export const getCurrentUserId = () => (state: RootState) => {
 export const getAuthErrors = () => (state: RootState) => state.users.error;
 
 export default usersReducer;
+
+//Commentaires
+//Le reducer "users" est crée avec la fonctionnalité redux createSlice, l'objet "UserInitialState" est 
+//paramétré et initialisé précisant que certaines données sont récupérées depuis le localstorage pour 
+//initialisé l'objet user. Divers scénariis sont crées de la meme manière que la feuille de code "rooms",
+//puis ses scénariis sont stockées dans la variable "actions" et "usersSlice" pour pouvoir etre invoqués à l'extérieur
+//de la feuille de code. La fonction implémentée Redux "createAction" permet de d'invoquer un objet et un payload spécifié
+//lors de l'appel de la fonction. Divers fonctions sont crées en prenant pour paramètre les scénariis associés au reducer
+// "users", des fonctions implémentées createAction,  des fonctions issuees de authService (principalement des requetes
+//serveurs PUT), des fonctions issues de localService (enregistrement et requete de données diverses en local). La fonction
+// "setTokens" est une fonction issue de localStorage et enregistre en local un set de donnée.
+//Les fonctions gets, de la meme manière que la feuille de code rooms, invoque une autre fonction prenant pour argument
+//la fonction RootState rappelant que cette fonction retourne le type de rootReducer lui meme étant une concaténation de 
+//tous les reducers. Cet appel de RootState  en entrée de fonction permet d'accéder aux objets users et paramètres spécifiées
+//par la fonction get correspondante isLoggedIn, dataLoaded. 

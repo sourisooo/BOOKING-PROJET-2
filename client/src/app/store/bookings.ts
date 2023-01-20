@@ -123,3 +123,17 @@ export const getBookingsByRoomId = (roomId: string) => (state: RootState) => {
 export const getBookingsErrors = () => (state: RootState) => state.bookings.error;
 
 export default bookingsReducer;
+
+//Commentaires
+//Le reducer "bookings" est crée en utilisant la fonctionnalité "createSlice" de Redux. Plusieurs
+//scénariis sont crées puis destructurer à travers la variable actions et bookingsSlice afin
+// de pouvoir utiliser les scénaris et ses variables n dehors de la feuille de code. Utilisation
+//de la fonctionnalité Redux createAction poour générer un utiliser un objet d'un type spécifique
+// (ici de type bookings/removeBookingRequested)et son payload (à définir lors de l'appel de la fonction).
+// Différentes fonctions sont créees à partir des réducer/scénariis et createAction précédent tel que
+//booking request et booking create qui vont utiliser bookingService pour realiser des requetes 
+//auprès du serveur (GET, PUT).
+//Des fonctions get vont etre définis pour affecter la valeur de l'array booking à la variable get.
+//L'accès à l'array booking est réalisé à travers l'invocation de la fontion RootState qui est entré
+//en paramétre de fonction. Techiquement, state est rentré en paramètre de fonction et son type est
+//de type RootState.
