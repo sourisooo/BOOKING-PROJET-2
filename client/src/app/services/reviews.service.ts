@@ -27,3 +27,9 @@ const reviewsService = {
 };
 
 export default reviewsService;
+
+//Commentaires
+//La feuille de code gère l'intégralité des requetes auprès de l'adresse HTML review/.
+//Ces requetes prennent en charges les requetes GET, POST, DELETE, PATCH auprès du serveur.
+//L'objet de la requete est retournée par le serveur dans la fonction concernée.
+

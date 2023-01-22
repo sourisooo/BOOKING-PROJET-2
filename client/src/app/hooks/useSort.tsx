@@ -42,3 +42,17 @@ export default function useSort<T>(items: T[], initialSortBy: { path: keyof T; o
 
   return { sortedItems, sortBy, setSortBy, handleRequestSort };
 }
+
+//Commentaires
+//La fonction useSort est un array non définis prenant pour paramètre un objet "initialSortBy".
+//La fonction descendingComparator est un array qui prend pour paramètre deux string et un paramètre
+//qui retourne la clée d'un objet et réalise, à travers la comparaison des clées d'un objet, comparatif
+//des 2 éléments. La fonction getComparator est une fonction prenant deux objets en entrée puis
+//puis leur applique la fontion getComparator.
+//La fonction stableSort prend pour entrée de fonction un array en lecture prenant pour paramètre une fonction qui elle meme
+//prend deux objet en entrée et retourne un objet "number". La fonction stableSort permet de parcourir les listes
+//el et index puis compare les valeurs a et b puis réaffecte l'index de la liste el.
+//La fonction handleRequestSort prend pour entrée de type event ou mouse event et d'une variable de type keyof puis
+// la fonction setSortBy est appelé en prenant pour paramètre d'entrée la variable de type keyof.
+//La fonction useSort retourne les principales fonctions définies précédemment.
+

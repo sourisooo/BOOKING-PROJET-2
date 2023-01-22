@@ -38,3 +38,8 @@ const Reviews = () => {
 };
 
 export default Reviews;
+
+//Commentaires
+//La fonction Reviews défnit plusieurs variables qui s'incrementent en prenant des informations issus
+//des scénaris et des reducers reviews et users ainsi que de leurs fonctions GET. Le template HTML retournée
+//utilise les différentes variables, fonctions précédemment définis.

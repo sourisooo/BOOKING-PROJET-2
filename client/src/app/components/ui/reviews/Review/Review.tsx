@@ -120,3 +120,15 @@ const Review: React.FC<ReviewProps> = ({ review }) => {
 };
 
 export default Review;
+
+//Commentaires
+//Review est une fonction qui accepte pour entrée un type ReviewProps. Au sein de la fonction, plusieurs fonctions
+//sont définis en prenant utilisant les scénariss des reducers room et use à travers les fonctions GET de ses scénariis. 
+//La fonction useSelector permet de récupérer l'objet stocké dans la fonction GET.
+//La fonction handleRemoveReview utilise les scénariis des reducers rooms et reviews qui vont essentiellement réaliser une
+//requette HTTP aurpès du serveur à travers la fonction reviewsService et dans un second temp modifier la valeur des paramètres
+//à travers un scénariis du reducer reviews. Un UseEffet est spécifié pour incrémenter une variable implémentée UseState à chaque
+//modification de l'objet review rappelant qu'il s'agit de la variable d'entrée de la fonction Review.
+//La fonction handleChange est une fonction qui prend pour entrée une saisie de type HTMLInputElement et à chaque modification,
+//modifie la valeur de content à travers la méthode SET de la fonctionnalité react UseState.
+//Enfin, la fonction réalise un template HTML qui utilise les variables, objets et fonctions précédemment cités.

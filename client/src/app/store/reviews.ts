@@ -116,3 +116,21 @@ export const getReviews = () => (state: RootState) => state.reviews.entities;
 export const getReviewsLoadingStatus = () => (state: RootState) => state.reviews.isLoading;
 
 export default reviewsReducer;
+
+//Commentaires
+//Le reducer reviews est défini avec la fonctionnalité redux createSlice. Ce reducers est défini avec
+//plusieurs variables et plusieurs scénariis. Ces scénariis et variables sont destructurés au sein
+//des variables  reviewsSlice et action afin de que les variables de ces fonctions puissent etre utiliser 
+//dans d'autres feuilles de code. Plusieurs fonctions createAction sont crées affin de retourner un objet
+// et son payload. La différence avec les scénariss de reducer vient du fait que les scénaris modifient
+//les variables du reducer tandis ce que createAction retourne un objet avec un paramètre étant le payload
+// vient en entrée de fonction).
+//Par la suite plusieurs fonctions sont définies en intégrant les fonctions et variables préablemenent
+//définis ultérieurement ainsi que l'usage de la reviewsService, cette dernière réalisant les requetes
+//auprès du serveur (POST, GET, UPDATE, PUT).
+//Les fonctions GET sont définis en prenant pour entrée de la premiere fonction un array de string, un string,
+//fonction invocant une autre fonction et prenant pour argument un objet de type RootState, et la mise en
+//entrée de fonction de ce dernier objet permet d'utiliser les objets et paramètre de RootState, et de les 
+//intégréer dans l'implémentation des fonctions GET. Ces fonctions GET retournent des objets au sein
+//d'un array.
+//

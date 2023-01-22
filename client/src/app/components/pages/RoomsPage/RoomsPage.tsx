@@ -94,3 +94,17 @@ const RoomsPage = () => {
 };
 
 export default RoomsPage;
+
+//Commentaires
+//La fonction RoomsPage définit plusieurs constantes issus des scénaris du reducer room et de ses GET, accèdes à l'intégralité des
+//reducers avec useAppDispatch, utilise la fonction useFiltersQuery, useSearch (interagir entre l'URL et la saisie), useSort (tri ascendant ou descant), 
+//usePagination(paramétrage du nombre de page par resultat). Les fonctions précedentes sont invoqués puis destructurés pour pouvoir
+//utiliser les variables de ses fonctions dans cette feuille de code.
+//La fonction handleSort est une fonction callback qui se déclenche lorsque handleChangePage ou setSortBy sont modifiés. La fonction
+//déclenchée est une fonction qui prend pour entrée "ChangeEvent<HTMLInputElement>", appelle la fonction setSortBy en prenant comme
+//paramètre HTMLInputElement.
+//La fonction handleResetFilters est une fonction callback qui se dévlent lorsque handleChangePageSize, handleResetSearchFilters sont
+//modifiés.  La fonction déclenchée invoque différentes fonctions initialisant la page d'accueil de la roompage.
+//Une fonction useEffect est spécifiée et se déclenche lorsque searchFilters est modifié, pour lancer les fonctions issus du reducer rooms
+//et celle du localStorage.
+//La fonction RoomsPage retourne un template HTML contenant l'ensemble des fonctions et objets et variables précités.
