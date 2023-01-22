@@ -22,3 +22,9 @@ const ProfileBooking = () => {
 };
 
 export default ProfileBooking;
+
+//Commentaires
+//La fonction ProfileBooking utilise les fonctions GET des reducers bookings et users.
+//Les datas sont ensuites insérées dans un template HTML. Une navigation est
+//réalisée au sein de l'array d'objet bookings puis l'appelle de la fonction 
+//BookingCard est réalisée au sein de la navigation pour afficher les bookings par ID.

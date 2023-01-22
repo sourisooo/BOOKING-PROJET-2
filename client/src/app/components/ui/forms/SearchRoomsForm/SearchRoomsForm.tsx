@@ -64,3 +64,9 @@ const SearchRoomsForm = () => {
 };
 
 export default SearchRoomsForm;
+
+//Commentaires
+//La fonction SearchRoomsForm invoque et destructure la fonction useForm pour pouvoir utiliser ses paramètres dans la
+//feuille de code. La fonction handleSubmit prend pour entrée un formEvent<HTMLButtonElement> , récupère la data issus
+//de la destructuration de la fonction form et l'insère dans le localstorage.
+//La fonction va retourner un template HTML utilisant les fonctions, objets et variables précédemment cités.

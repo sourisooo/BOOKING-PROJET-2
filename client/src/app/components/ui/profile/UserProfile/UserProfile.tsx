@@ -59,3 +59,12 @@ const UserProfile = ({ userId }: { userId: string }) => {
 };
 
 export default UserProfile;
+
+//Commentaires
+//La fonction UserProfile prend pour entrée un string, fait appel à une fonction GET
+//du reducer users, invoque la fonction useMockData pour la destructurer et etre en 
+//mesure d'utiliser ses composants. La fonction handleClick appelle la fonction initialize
+//, rappelant que cette dernière réalise des requetes PUT auprès du serveur. Ensuite un
+//template HTML est généré en utilisant les fonctions, objets, variables précitées.
+//Les variables de l'objet currentUser sont utilisables du fait que l'objet currentUser
+//est de type  UserType, spécifiée dans la feuille de code types.ts.

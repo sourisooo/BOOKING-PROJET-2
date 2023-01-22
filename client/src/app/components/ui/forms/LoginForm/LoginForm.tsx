@@ -49,3 +49,12 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
+
+//Commentaires
+//La fonction LoginForm invoque la fonction useForm pour la destructurer et accéder à ses paramètres.
+//Certaines fonctions issues du reducer user sont utilisés. La fonction handleSubmit prend pour entrée
+//un HTMLButtonElement puis appelle la fonction signIn, fonction issue du reducer user, en y insérant
+// pour paramètre data et en ajoutant la dépendance/paramètre history.location représentant l'adresse
+//HTTP actuelle.
+//La fonction LoginForm retourne un template HTML utilisant les différents fonctions, objets et variables
+//précitées.

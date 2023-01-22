@@ -72,3 +72,10 @@ const RegisterForm = () => {
 };
 
 export default RegisterForm;
+
+//Commentaires
+//La fonction RegisterForm invoque puis destructure la fonction useForm afin de pouvoir utiliser ses différents
+//composants à l'intérieur de la feuille de travail. La fonction handleSubmit prend pour entrée un 
+// FormEvent<HTMLButtonElement> puis appelle l'une des fonctions du reducer user en prenant pour paramètre
+//de fonction l'objet data issu de la fonction  useForm. La fonction RegisterForm retourne un template HTML
+//en utilisant les fonctions, objets et variables précitées.

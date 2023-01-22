@@ -72,3 +72,14 @@ const useMockData = () => {
 };
 
 export default useMockData;
+
+//Commentaires
+//La fonction constitue plusieurs arrays de différents types: rooms, users, reviews et likes.
+//La fonction summaryCount réalise un comptage des plusieurs variables usant de useState.
+//La fonction updateProgress realise plusieurs controle afin d'affecter les variables 
+//useState en appelant leur foncction SET.
+//UseEffect est utilisée de tel manière à ce que la fonction updateProgress soit
+//lancée à chaque fois que la variable count utilisant useState est modifiée.
+//La fonction initialize est asynchrone/une promesse. La fonction réalise des demandes
+//de requetes PUT auprès du serveur relatifs à un id spécifique.
+//La fonction useMockData return l'ensemble des fonctions spécifiés ci-dessus.

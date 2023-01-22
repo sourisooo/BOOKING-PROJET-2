@@ -117,3 +117,22 @@ function Form({ children, handleChange, data, errors, handleKeyDown, ...rest }: 
 }
 
 export { useForm, Form };
+
+//Commentaires
+//La fonction useForm prend pour entrée un objet de type non défini, un boolean et un ValidatorConfigType.
+//La fonction spécifie plusieurs variables en leur associant la fonctionnalité useState de react.
+//La fonction validate prend un objet data en entrée la soumet à la fonction validor (gère toutes
+//les restriction de formes) , incrément l'objet data nouvellement modifié dans la variable error à travers
+//la fonction SET de useState implémentée react.
+//La fonction handleInputChange prend un objet target, le destructure, utilise la fonction SET de data sur les
+//les variables de target de tel manière à pouvoir constitué un array d'objet target; Cette fonction est
+//lancée à chaque fois que validateOnChange, validate sont modifiées (useCallback).
+//La fonction handleKeyDown constitue un array de form (lui meme étant un target.form) puis de lui appliquer
+//un filtre de tel manière à filter input ou button comme paramètre du filtre méthode. L'index du formElements
+//va etre retourner puis le formelement est incrémentée d'une unité puis focaliser l'entrée de saisie clavier
+//sur cet emplacement HTML de la page HTML. La fonction useForm retourne toutes les fonctions, variables et objets
+//cités précédemment.
+//La fonction Form prend pour entrée un objet de formType (définit juste avant mais non analyser dans le commentaire)
+//puis navigue à travers l'un des paramètres de l'objet pris en entrée pour retourner config (item modifié). La fonction
+//form va ensuite retourner l'un des paramètres de l'objet de type formtype ainsi que la config dans un template
+//HTML.

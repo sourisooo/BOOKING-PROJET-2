@@ -66,3 +66,11 @@ const BookingFormPriceInfo: React.FC<Props> = ({ roomId, countDays, setTotalPric
 };
 
 export default BookingFormPriceInfo;
+
+//Commentaires
+//La fonction BookingFormPriceInfo accepte un objet en argument de type "props". La fonction GET
+//du reducer room est appelé pour récupérer l'id de la room. Une fonction useEffect est paramétrée
+//de manière à lancer la fonction setTotalPrice lorsque la variable countDays est modifiée. Ce prix
+//est déterminé en fonction de l'id de la room et de sa variable countDays associée.
+//Un template HTML est retournée par la fonction BookingFormPriceInfo en utilisant les fonctions
+//objets et variables précitées.
