@@ -53,3 +53,13 @@ class TokenService {
 }
 
 module.exports = new TokenService();
+
+//Commentaires
+//La classe TokenService contient plusieurs fonctions qui vont permettre d'intérargir avec les jetons:
+//la fonction generate utilise la méthode sign pour  générer un nouveau jeton. 
+//L'objet token est un schema moongoose constitué de deux objets users et refreshToken.
+//La methode asynchrone prenant pour entrée deux objets non typés recherche un token parmi
+//une liste d'objet token, le sauvegarde si il le trouve sinon en crée un nouveau.
+//Les fonctions validate représentent des fonctions GET cherchant un objet specfique dans la 
+//liste de token.
+//

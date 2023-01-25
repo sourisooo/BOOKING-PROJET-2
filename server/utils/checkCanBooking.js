@@ -28,3 +28,9 @@ const checkCanBooking = async bookingData => {
 module.exports = {
   checkCanBooking,
 };
+
+//Commentaires
+//Moment est une méthode permettant de manipuler des données temporelles. La fonction asynchorne bookingData
+//repère un élément spécifique de l'array d'objet "booking", puis réalise différent filtre de tel manière à
+//comparer des dates, naviguer à travers les éléments filtrés pour récupérer les rooms id associés au booking 
+//puis retourner des booking filtrés sur un id roms spécifique.

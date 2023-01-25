@@ -19,4 +19,4 @@ const schema = new Schema({
   hasDisabledAssistant: Boolean,
 });
 
-module.exports = model('Room', schema);
+module.exports = model('room', schema);

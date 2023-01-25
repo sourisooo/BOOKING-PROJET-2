@@ -47,3 +47,11 @@ async function start() {
 }
 
 start();
+
+//Commentaires
+//L'application initialise des bibliothèques qui seront utilisés: express pour la réalisation de 
+//page web etf (les méthodes précisent le type de donnée qui vont etre utilisé), cors pour le controle
+//des requetes entrantes sur le serveur, spécifie à la racine /api des routes utilisée pour les requetes
+//réalisée au serveur, et spécifie à la racine '/' des routes pour le coté client. Par ailleurs, toutes type
+//de requetes HTTP réalisée sur le client retourne la page d'accueil index.html.
+//La fonction start se connecte à MongoDB puis lance initDatabase (réinitialise la bdd auprès de mongDB).
