@@ -61,3 +61,23 @@ router.delete('/:reviewId', auth, async (req, res) => {
 });
 
 module.exports = router;
+
+//Commentaires
+//La feuille de code gère toutes les requetes réalisées sur ('/') et (/:reviewId).
+//La demande GET est réalisé en destructurant la requete pour permettre l'usage d'une des variables
+//ou paramètres de la requete représentant l'objet en entrée de fonction asynchone, une recherche est réalisée
+//,en fonction de la requete passée en entrée de fonction asynchone, sur l'array d'objet review de type
+//schema. La réponse est envoyée au client en envoyant l'objet de la recherche.
+//La demande POST est réalisé en créant un nouvel objet dans l'array Review. Une réponse est envoyée
+//au client en enovyant l'objet nouvellement cré.
+//La demande PATCH est réalisé en destrurant la requete en utilisant params, rappelant que params
+//permet une destrucration d'un objet sans en connaitres les variables/paramètres.
+//Unre recherche est effectuée dans l'array review puis modifie les variables de cet objet en utilisant
+//la méthode implémentée par Mongoose apellée findByIdAndUpdate. Les nouvelles valeurs à attribuer sont 
+//spécifié dans le corps de la méthode(). La réponse au client en envoyée en envoyant l'objet nouvellement
+//modifiée. 
+//La demande DELETE est réalisé en destrurant la requete en utilisant params, rappelant que params
+//permet une destrucration d'un objet sans en connaitres les variables/paramètres.
+//Une recherche est réalisée dans l'array d'objet Review de type Schema. Puis, l'objet trouvé
+//dans l'array est supprimé de l'array Review.
+//Une réponse est envoyé au client en envoyant une réponse nulle (null).

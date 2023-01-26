@@ -65,3 +65,22 @@ router.delete('/:bookingId', auth, async (req, res) => {
 });
 
 module.exports = router;
+
+//Commentaires
+//La feuille de code définit tous les requetes gérér par le serveur relatif à la réservation.
+//Le router réalise une requete GET à l'adresse "/" en utilisant une fonction asynchrone et en prenant pour 
+//entrée de fonction une requete et une réponse. Une recherche est faite parmis l'array d'objet du schema
+//booking, puis le résultat de la recherche est retournée au client.
+//Le router réalise une requete POST à l'adresse "/"en utilisant une fonction asynchrone et en prenant pour 
+//entrée de fonction une requete et une réponse. La fonction checkCanBooking est appelé pour veérifier les 
+//disponibilités de la chambre pour un booking spécifique. Un nouvel objet booking est crée en utilisant
+//une méthode du schema mongoose en prenant comme paramètres d'initialisation de l'objet la requete.
+//Le résultat (ici objet nouvellemet crée) est envoyé en client.
+//Le router réalise une requete DELETE à l'adresse '/:bookingId' en utilisant une fonction asynchrone et en prenant pour 
+//entrée de fonction une requete et une réponse. 
+// What are params used for? By using the params keyword, you can specify a method parameter that takes a variable number of arguments.
+// The parameter type must be a single-dimensional array. No additional parameters are permitted after the params keyword in a method
+// declaration, and only one params keyword is permitted in a method declaration.
+//Une recherche est réalisée sur le schema booking en prenant comme paramètre de méthode la requete de la fonction asynchrone.
+//L'objet issue de la recherche est ensuite supprimer de l'array appartenant au schema booking (methode remove) puis une
+//une réponse est envoyée au client en envoyant un objet null.

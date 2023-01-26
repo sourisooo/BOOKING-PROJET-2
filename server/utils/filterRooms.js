@@ -63,3 +63,10 @@ const filterRooms = async (items, filters) => {
 module.exports = {
   filterRooms,
 };
+
+//Commentaires
+//La fonction asynchrone prend pour entrée deux objets non définis. Un recherche est réalisé sur tous les objets
+//de l'arrau booking puis des filtres sont appliqués de tel manière à prendre en considération l'un des deux
+//objet en entrée de fonction (filters). Le meme procédé est appliqué à l'autre objet en entrée de fonction
+//asynchrone (items). La fonction retourne l'objet filteredItems représentant l'array d'objet items surlesquel a été
+//appliquée des filtres.

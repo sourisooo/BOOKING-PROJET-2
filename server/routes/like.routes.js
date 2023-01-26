@@ -50,3 +50,20 @@ router.delete('/:likeId', auth, async (req, res) => {
 });
 
 module.exports = router;
+
+//Commentaires
+//Le router gère les requetes à '/' concernant l'objet de like de type schema.
+//La requete GET est réalisé en destructurant la requete (entrée de la fonction asynchrone), une recherche est réalisé
+//dans l'array objet like appartenant à type schema (fonctionnalité de Mongose permettant
+//d'interagir avec la bdd Mongodb). Le résultat de la recherche est envoyé au client.
+//La requete POST est réalisée en créant un nouvel objet "Like" de type Schema.
+//L'initialisation de la création est précisée grace à la requete en entrée de fonction asynchrone,
+//puis la réponse est envoyé au client en envoyant l'objet nouvellet crée.
+//La requete DELETE, destructure l'objet requete issu de l'entrée de fonction asynchrone, cette 
+//destructuration est faite sans connataire et définir les variables/paramètres: il permet
+//d'accéder aux paramètres/variables sans en connaitre le nom; cette spécifique destructuration est rendu possbile
+//grance à la méthode params appliqué à la requete.
+//Une recherche est réalisée dans l'array/liste de l'objet like de type schema.
+//L'objet recherché est supprimé de l'array/liste d'objet avec la méthode remove implémentée Mongooose.
+//Ensuite, la réponse est envoyé au client, envoyant une réponse null.
+//
